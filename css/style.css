@@ -119,17 +119,30 @@ body:hover {
 
 #try {
 	background:#688791;
-	color:#f1dd98;
+	color:#f9f9f9;
 	top:165px;
 	left:30px;
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=7);
+  	opacity: 0.7;
+	font-weight: normal;
+}
+
+#try a:first-child {
+	padding-top:15px;
 }
 
 #try a {
-	color:#f9f9f9;
+	color:#f1dd98;
+	padding-left:2px;
 }
 
 #try a:hover {
 	color:#cbcbcb;
+}
+
+#try div{
+	width:100%;
+	padding-bottom:15px;
 }
 
 #url {
@@ -164,6 +177,21 @@ body:hover {
 	width:50%;
 }
 
+.share {
+	position:absolute;
+	top:20px;
+	right:20px;
+	z-index:9999;
+	padding:10px 10px 6px 10px;
+	background:#343434;
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=5);
+  	opacity: 0.5;
+}
+
+.share a {
+	color:#f9f9f9;
+}
+
 /* =============================================================================
    Media Queries
    ========================================================================== */
@@ -183,7 +211,7 @@ body:hover {
 	
 	#try {
 		font-size: 26px;
-		line-height: 36px;
+		line-height: 31px;
 		width: 720px;
 	}
 	

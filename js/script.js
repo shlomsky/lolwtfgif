@@ -107,6 +107,17 @@ $(document).ready(function(){
 		});
 	}
 	
+	$("#url").click(function(){
+		$(this).val('');
+	});
+	
+	$("#url").blur(function(){
+		var x = $(this).val();
+		if (!(x)) {
+			$(this).val('why did you do that?');
+		}
+	});
+	
 	
 	$(window).resize(function(){
 		viewport();
