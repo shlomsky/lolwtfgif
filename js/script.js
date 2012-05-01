@@ -128,6 +128,7 @@ $(document).ready(function(){
 	$(window).click(function(){
 		anyScroll();
 			//show next img
+		    _gaq.push(['_trackEvent', 'Scroll', 'Mouse Click', '']);
 			cycle("right");
 	});
 	
@@ -135,9 +136,11 @@ $(document).ready(function(){
 	$(document).keydown(function(e){
 		anyScroll();
 	    if (e.keyCode == 39) { 
+		   _gaq.push(['_trackEvent', 'Scroll', 'Right Arrow Key Press', '']);
 	       cycle("right");
 	    }
 	    else if (e.keyCode == 37) { 
+		   _gaq.push(['_trackEvent', 'Scroll', 'Left Arrow Key Press', '']);
 	       cycle("left");
 	    }
 	});
