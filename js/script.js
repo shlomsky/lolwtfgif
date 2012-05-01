@@ -197,18 +197,11 @@ function cycle(direction){
 	total = $("#goodstuff li").size();
 	initiate();
 	if (direction === "right") {
-
 			next.show();
-	
-	
 			current.hide();
-	
 	} else if (direction === "left") {
-	
 			prev.show();
-	
 			current.hide();
-	
 	}
 	
 	//figure out how many img are left
