@@ -198,23 +198,6 @@ body:hover {
   width: 50%;
 }
 
-/* line 119, ../scss/style.scss */
-.share {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  z-index: 9999;
-  padding: 10px 10px 6px 10px;
-  background: #343434;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=5);
-  opacity: 0.5;
-}
-
-/* line 130, ../scss/style.scss */
-.share a {
-  color: #f9f9f9;
-}
-
 /* =============================================================================
    Media Queries
    ========================================================================== */
@@ -222,36 +205,36 @@ body:hover {
   /* Style adjustments for viewports that meet the condition */
 }
 @media only screen and (min-width : 1224px) {
-  /* line 143, ../scss/style.scss */
+  /* line 128, ../scss/style.scss */
   .top {
     width: 22%;
   }
 
-  /* line 147, ../scss/style.scss */
+  /* line 132, ../scss/style.scss */
   #loading-text {
     width: 8%;
   }
 
-  /* line 151, ../scss/style.scss */
+  /* line 136, ../scss/style.scss */
   #try {
     font-size: 26px;
     line-height: 31px;
     width: 720px;
   }
 
-  /* line 157, ../scss/style.scss */
+  /* line 142, ../scss/style.scss */
   #url {
     padding: 25px 20px;
     width: 20%;
   }
 
-  /* line 162, ../scss/style.scss */
+  /* line 147, ../scss/style.scss */
   #click {
     width: 655px;
     font-size: 31px;
   }
 
-  /* line 166, ../scss/style.scss */
+  /* line 151, ../scss/style.scss */
   #err {
     width: 545px;
   }

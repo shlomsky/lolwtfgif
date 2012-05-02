@@ -536,3 +536,4 @@ AddCharset utf-8 .css .js .xml .json .rss .atom
 </IfModule>
 
 ErrorDocument 404 /
+
