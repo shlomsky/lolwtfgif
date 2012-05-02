@@ -93,6 +93,7 @@ $(document).ready(function() {
 		$('#landing').show();
 		$('#url').focus();
 		imgClean();
+		//load tumblr url when enter key is pressed
 		$(document).keydown(function(e) {
 		    if (e.keyCode == 13) {
 		       	var str = $('#url').val();
@@ -102,7 +103,7 @@ $(document).ready(function() {
 				if (str.substr(0, 7) === 'http://') {
 					  var str = str.substring(7);
 				}
-				window.location.href = 'http://lolwtfgif.com/?url='+ str + '';
+				window.location.href = 'http://lolwtfgif.com/?url=' + str + '';
 		    }
 		});
 	}
@@ -151,7 +152,7 @@ var offset = 0;
 function load() {
 	$.ajax({
 	    type: 'GET',
-	    url: 'http://api.tumblr.com/v2/blog/'+ url + '/posts?type=photo&limit=10&offset='+ offset + '',
+	    url: 'http://api.tumblr.com/v2/blog/' + url + '/posts?type=photo&limit=10&offset=' + offset + '',
 	    dataType: 'jsonp',
 	    data: {
 	        api_key: 'fmCi0cMluKIabZEGPyUmaX3pDMA6VApivcTN6artFbU405Sv3K',
@@ -165,7 +166,7 @@ function loadAgain(num) {
 	if (num < 7) {
 		$.ajax({
 		    type: 'GET',
-		    url: 'http://api.tumblr.com/v2/blog/'+ url + '/posts?type=photo&limit=10&offset='+ offset + '',
+		    url: 'http://api.tumblr.com/v2/blog/' + url + '/posts?type=photo&limit=10&offset=' + offset + '',
 		    dataType: 'jsonp',
 		    data: {
 		        api_key: 'fmCi0cMluKIabZEGPyUmaX3pDMA6VApivcTN6artFbU405Sv3K',
@@ -211,7 +212,7 @@ function cycle(direction) {
 	{
 		load();
 	}
-	var thisURL = '/?url='+ url + '';
+	var thisURL = '/?url=' + url + '';
 	_gaq.push(['_trackPageview', thisURL]);
 }
 
