@@ -24,13 +24,6 @@
 <body>
 <header>
 	<div id="fb-root"></div>
-	<script>(function(d, s, id) {
-	  var js, fjs = d.getElementsByTagName(s)[0];
-	  if (d.getElementById(id)) return;
-	  js = d.createElement(s); js.id = id;
-	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=105384406221433";
-	  fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));</script>
 </header>
 <div id="landing" style="display:none;">
 	<div id="input">
@@ -77,6 +70,9 @@
 		<div>
 			<div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div>
 		</div>
+		<div>
+			<a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-text="check this out">Tweet</a>
+		</div>
 	</div>
 </div>
 <div id="loading" style="display:none;">
@@ -99,7 +95,7 @@
 
 <!-- scripts concatenated and minified via ant build script-->
 <script src="js/plugins.js"></script>
-<script src="js/script.js"></script>
+<script src="js/script.js?v1"></script>
 <!-- end scripts-->
 
 <script>
@@ -108,6 +104,15 @@
 	g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
 	s.parentNode.insertBefore(g,s)}(document,'script'));
 </script>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=105384406221433";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
 </body>
 </html>

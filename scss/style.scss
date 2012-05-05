@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-
+@import "compass/css3";
 @import "compass/reset";
 
 body {
@@ -120,6 +120,11 @@ body:hover {
 	position:absolute;
 	bottom:15px;
 	right:15px;
+	div {
+		float:right;
+		margin:0 0 0 5px;
+		width:90px;
+	}
 }
 
 /* =============================================================================

@@ -144,6 +144,10 @@ body:hover {
   position: absolute;
   bottom: 15px;
   right: 15px; }
+  .share div {
+    float: right;
+    margin: 0 0 0 5px;
+    width: 90px; }
 
 /* =============================================================================
    Media Queries

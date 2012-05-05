@@ -221,9 +221,6 @@ function anyScroll() {
 	$('#goodstuff #click').hide();
 }
 
-FB.Event.subscribe('edge.create', function(targetUrl) {
-  _gaq.push(['_trackSocial', 'facebook', 'like', targetUrl]);
-});
 
 
 
