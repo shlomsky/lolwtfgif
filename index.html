@@ -23,6 +23,14 @@
 </head>
 <body>
 <header>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=105384406221433";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
 </header>
 <div id="landing" style="display:none;">
 	<div id="input">
@@ -65,6 +73,11 @@
 	</div>
 	<ul>
 	</ul>
+	<div class="share">
+		<div>
+			<div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div>
+		</div>
+	</div>
 </div>
 <div id="loading" style="display:none;">
 	<div class="top" id="loading-text">
