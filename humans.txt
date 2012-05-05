@@ -3,18 +3,17 @@
 
 
 /* TEAM */
-  <your title>: <your name>
-  Site:
-  Twitter:
-  Location:
+  co-founder: brian andrich
+  co-founder: jan sanchez
+  Location: new york, ny
 
 /* THANKS */
   Names (& URL):
 
 /* SITE */
   Standards: HTML5, CSS3
-  Components: Modernizr, jQuery
-  Software:
+  Components: Modernizr, jQuery, Compass SCSS
+  Software: TextMate, Photoshop
 
 
 
