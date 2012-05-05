@@ -147,7 +147,9 @@ body:hover {
   .share div {
     float: right;
     margin: 0 0 0 5px;
-    width: 90px; }
+    width: 80px; }
+    .share div.tw {
+      margin-left: 12px; }
 
 /* =============================================================================
    Media Queries
