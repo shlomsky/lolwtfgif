@@ -18,6 +18,7 @@ function showError() {
 	$('#error').show();
 	$('#landing').hide();
 	$('#goodstuff').hide();
+	$('#goodthing').hide();
 	$('#loading').hide();
 }
 
@@ -67,16 +68,20 @@ myJsonpCallback = function(data)
 $(document).ready(function() {
 	total = $('#goodstuff li').size();
 	url = urlParams['url'];
-	if (url) {
+	img = urlParams['img'];
+	if (img) {
+		$('#goodthing').show();
+		$('#goodthing ul').append("<li><img class='dirty' src='" + img + "' onerror='showError()'></li>");
+		imgClean();
+	}
+	else if (url) {
 		$('#loading').show();
-
 		if (url.substr(-1) === '/') {
 		 url = url.substr(0, url.length - 1);
 		}
 		if (url.substr(0, 7) === 'http://') {
 			  url = url.substring(7);
 		}
-
 		//decide what to show
 		load();
 		setTimeout(function() {
