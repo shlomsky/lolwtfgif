@@ -205,7 +205,7 @@ div ul li:first-child img {
 
 .share {
   position: absolute;
-  bottom: 15px;
+  top: 15px;
   right: 15px; }
   .share div {
     float: right;
