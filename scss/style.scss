@@ -259,6 +259,19 @@ div ul li:first-child img{
 	        animation-fill-mode: both;
 }
 
+.animatedfast {
+	-webkit-animation-duration: 0.2s;
+	   -moz-animation-duration: 0.2s;
+	    -ms-animation-duration: 0.2s;
+	     -o-animation-duration: 0.2s;
+	        animation-duration: 0.2s;
+	-webkit-animation-fill-mode: both;
+	   -moz-animation-fill-mode: both;
+	    -ms-animation-fill-mode: both;
+	     -o-animation-fill-mode: both;
+	        animation-fill-mode: both;
+}
+
 .animated.hinge {
 	-webkit-animation-duration: 2s;
 	   -moz-animation-duration: 2s;
