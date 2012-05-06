@@ -132,6 +132,7 @@ $(document).ready(function() {
 	}
 
 	$('input').click(function() {
+		$(this).addClass("pulse");
 		var x = $(this).val();
 		if (x === "enter url (i.e. iwdrm.tumblr.com)") {
 			$(this).val('');
@@ -145,6 +146,7 @@ $(document).ready(function() {
 			$(this).val("enter url (i.e. iwdrm.tumblr.com)");
 			$(this).addClass("blur");
 		} 
+		$(this).removeClass("pulse");
 	});
 
 
