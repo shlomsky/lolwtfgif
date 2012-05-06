@@ -229,14 +229,19 @@ div ul li:first-child img {
   .new-gallery a {
     color: #f9f9f9;
     text-shadow: rgba(52, 52, 52, 0.6) 0px 1px 3px;
-    padding: 6px 10px;
+    padding: 7px 11px;
     font-size: 14px;
     background: #0096ff;
     text-decoration: none;
     font-weight: bold;
     -webkit-box-shadow: 0px 0px 6px #343434;
     -moz-box-shadow: 0px 0px 6px #343434;
-    box-shadow: 0px 0px 6px #343434; }
+    box-shadow: 0px 0px 6px #343434;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px; }
     .new-gallery a:hover {
       background: #e23e80;
       text-decoration: none;

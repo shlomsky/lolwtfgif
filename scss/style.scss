@@ -215,12 +215,13 @@ div ul li:first-child img{
 	a {
 		color:#f9f9f9;
 		@include text-shadow;
-		padding:6px 10px;
+		padding:7px 11px;
 		font-size:14px;
 		background:#0096ff;
 		text-decoration:none;
 		font-weight:bold;
 		@include box-shadow(0px 0px 6px #343434);
+		@include border-radius(5px);
 		&:hover {
 			background:#e23e80;
 			text-decoration:none;
