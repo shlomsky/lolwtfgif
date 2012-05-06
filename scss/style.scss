@@ -207,6 +207,27 @@ div ul li:first-child img{
 	}
 }
 
+.new-gallery {
+	position:absolute;
+	right:15px;
+	bottom:20px;
+	display:none;
+	a {
+		color:#f9f9f9;
+		@include text-shadow;
+		padding:6px 10px;
+		font-size:14px;
+		background:#0096ff;
+		text-decoration:none;
+		font-weight:bold;
+		&:hover {
+			background:#e23e80;
+			text-decoration:none;
+			cursor:pointer;
+		}
+	}
+}
+
 /* =============================================================================
    Media Queries
    ========================================================================== */

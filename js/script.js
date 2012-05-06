@@ -107,6 +107,9 @@ $(document).ready(function() {
 			} else {
 				$('#loading').hide();
 				$('#goodstuff').show();
+				var random = getRandomGallery();
+				var nextUrl = "/?url="+random+"&tupac=alive";
+				$("#goodstuff .new-gallery a").attr("href", nextUrl);
 			}
 		}, 5000);
 	} else {
@@ -249,6 +252,12 @@ function cycle(direction) {
 function anyScroll() {
 	total = $('#goodstuff li').size();
 	$('#goodstuff #click').hide();
+	$('.new-gallery').show();
+}
+
+var randomGallery = ["optimisto.tumblr.com", "optimisto.tumblr.com", "zungo.tumblr.com", "bestgifarchive.tumblr.com", "influent.tumblr.com"];
+function getRandomGallery() {
+   return randomGallery[Math.floor(Math.random() * randomGallery.length)];
 }
 
 
