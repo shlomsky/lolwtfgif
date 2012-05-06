@@ -50,7 +50,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block; }
 
 body {
-  font-family: 'helvetica neue', helvetica, arial, sans-serif; }
+  font-family: 'helvetica neue', helvetica, arial, sans-serif;
+  position: fixed; }
 
 strong {
   font-weight: bold; }
