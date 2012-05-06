@@ -255,7 +255,7 @@ function anyScroll() {
 	$('.new-gallery').show();
 }
 
-var randomGallery = ["optimisto.tumblr.com", "optimisto.tumblr.com", "zungo.tumblr.com", "bestgifarchive.tumblr.com", "influent.tumblr.com", "fuckyeahgifs.tumblr.com", "beatsandbuds.com"];
+var randomGallery = ["optimisto.tumblr.com", "optimisto.tumblr.com", "zungo.tumblr.com", "bestgifarchive.tumblr.com", "influent.tumblr.com", "fuckyeahgifs.tumblr.com", "fancygifs.tumblr.com"];
 function getRandomGallery() {
    return randomGallery[Math.floor(Math.random() * randomGallery.length)];
 }

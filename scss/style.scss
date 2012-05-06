@@ -220,6 +220,7 @@ div ul li:first-child img{
 		background:#0096ff;
 		text-decoration:none;
 		font-weight:bold;
+		@include box-shadow(0px 0px 6px #343434);
 		&:hover {
 			background:#e23e80;
 			text-decoration:none;

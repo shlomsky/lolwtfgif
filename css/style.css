@@ -233,7 +233,10 @@ div ul li:first-child img {
     font-size: 14px;
     background: #0096ff;
     text-decoration: none;
-    font-weight: bold; }
+    font-weight: bold;
+    -webkit-box-shadow: 0px 0px 6px #343434;
+    -moz-box-shadow: 0px 0px 6px #343434;
+    box-shadow: 0px 0px 6px #343434; }
     .new-gallery a:hover {
       background: #e23e80;
       text-decoration: none;
