@@ -230,6 +230,9 @@ function initiate() {
 function cycle(direction) {
 	total = $('#goodstuff li').size();
 	initiate();
+	if (total < 2) {
+		return false;
+	}
 	if (direction === 'right') {
 			next.show();
 			current.hide();
@@ -255,7 +258,7 @@ function anyScroll() {
 	$('.new-gallery').show();
 }
 
-var randomGallery = ["optimisto.tumblr.com", "bestgifarchive.tumblr.com", "influent.tumblr.com", "fuckyeahgifs.tumblr.com", "fancygifs.tumblr.com", "4gifs.tumblr.com", "gifparty.tumblr.com"];
+var randomGallery = ["optimisto.tumblr.com", "bestgifarchive.tumblr.com", "influent.tumblr.com", "fuckyeahgifs.tumblr.com", "fancygifs.tumblr.com", "4gifs.tumblr.com", "gifparty.tumblr.com", "gifpeanutbutter.tumblr.com"];
 function getRandomGallery() {
    return randomGallery[Math.floor(Math.random() * randomGallery.length)];
 }
