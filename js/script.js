@@ -108,7 +108,7 @@ $(document).ready(function() {
 				$('#loading').hide();
 				$('#goodstuff').show();
 				var random = getRandomGallery();
-				var nextUrl = "/?url="+random+"&tupac=alive";
+				var nextUrl = "/?url="+random+"";
 				$("#goodstuff .new-gallery a").attr("href", nextUrl);
 			}
 		}, 5000);
