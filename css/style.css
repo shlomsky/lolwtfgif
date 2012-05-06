@@ -214,6 +214,13 @@ div ul li:first-child img {
     .share div.tw {
       margin-left: 12px; }
 
+.logo-small {
+  position: absolute;
+  left: 15px;
+  bottom: 10px; }
+  .logo-small img {
+    display: block !important; }
+
 /* =============================================================================
    Media Queries
    ========================================================================== */

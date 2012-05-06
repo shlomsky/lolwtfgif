@@ -198,6 +198,15 @@ div ul li:first-child img{
 	}
 }
 
+.logo-small {
+	position:absolute;
+	left:15px;
+	bottom:10px;
+	img {
+		display:block !important;
+	}
+}
+
 /* =============================================================================
    Media Queries
    ========================================================================== */
