@@ -16,6 +16,22 @@ var urlParams = {};
 
 function showError() {
 	$('#error').show();
+	//load tumblr url when enter key is pressed
+	$(document).keydown(function(e) {
+	    if (e.keyCode == 13) {
+	       	var str = $('input:visible').val();
+			if (str.substr(-1) === '/') {
+			  var str = str.substr(0, str.length - 1);
+			}
+			if (str.substr(0, 7) === 'http://') {
+				  var str = str.substring(7);
+			}
+			if (str === "") {
+				return false;
+			}
+			window.location.href = 'http://lolwtfgif.com/?url=' + str + '';
+	    }
+	});
 	$('#landing').hide();
 	$('#goodstuff').hide();
 	$('#goodthing').hide();
@@ -96,32 +112,39 @@ $(document).ready(function() {
 	} else {
 		$('#loading').hide();
 		$('#landing').show();
-		$('#url').focus();
 		imgClean();
 		//load tumblr url when enter key is pressed
 		$(document).keydown(function(e) {
 		    if (e.keyCode == 13) {
-		       	var str = $('#url').val();
+		       	var str = $('input:visible').val();
 				if (str.substr(-1) === '/') {
 				  var str = str.substr(0, str.length - 1);
 				}
 				if (str.substr(0, 7) === 'http://') {
 					  var str = str.substring(7);
 				}
+				if (str === "") {
+					return false;
+				}
 				window.location.href = 'http://lolwtfgif.com/?url=' + str + '';
 		    }
 		});
 	}
 
-	$('#url').click(function() {
-		$(this).val('');
+	$('input').click(function() {
+		var x = $(this).val();
+		if (x === "enter url (i.e. iwdrm.tumblr.com)") {
+			$(this).val('');
+		} 
+		$(this).removeClass("blur");
 	});
 
-	$('#url').blur(function() {
+	$('input').blur(function() {
 		var x = $(this).val();
-		if (!(x)) {
-			$(this).val('why did you do that?');
-		}
+		if (x === "") {
+			$(this).val("enter url (i.e. iwdrm.tumblr.com)");
+			$(this).addClass("blur");
+		} 
 	});
 
 
@@ -131,7 +154,7 @@ $(document).ready(function() {
 	});
 
 	//click go right
-	$(window).click(function() {
+	$("#goodthing, #goodstuff").click(function() {
 		anyScroll();
 			//show next img
 		    _gaq.push(['_trackEvent', 'Scroll', 'Mouse Click', '']);
@@ -225,6 +248,8 @@ function anyScroll() {
 	total = $('#goodstuff li').size();
 	$('#goodstuff #click').hide();
 }
+
+
 
 
 

@@ -11,9 +11,8 @@
 	<meta name="description" content="create an animated gif gallery from any tumblr blog">
 	<meta name="author" content="">
 
-	<meta name="viewport" content="width=device-width">
-
-	<link href="css/style.css?v2" media="screen, projection" rel="stylesheet" type="text/css" />
+	<meta name="viewport" content="initial-scale=1.0, width=730"/> 
+	<link href="css/style.css?v3" media="screen, projection" rel="stylesheet" type="text/css" />
 	<link href="css/print.css" media="print" rel="stylesheet" type="text/css" />
   	<!--[if IE]>
       	<link href="css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -27,37 +26,46 @@
 </header>
 <div id="landing" style="display:none;">
 	<div id="input">
-		<input type="text" value="iwdrm.tumblr.com" id="url" class="top">
-	</div>
-	<div id="try" class="top">
-		<div><strong>LOLWTFGIF</strong> lets you create a fullscreen animated gif gallery from any tumblog. just enter the url above or check out one of these:</div>
-		<a href="http://lolwtfgif.com/?url=iwdrm.tumblr.com">http://lolwtfgif.com/?url=iwdrm.tumblr.com</a><br />
-		<a href="http://lolwtfgif.com/?url=skateboardinggifs.tumblr.com">http://lolwtfgif.com/?url=skateboardinggifs.tumblr.com</a><br />
-		<a href="http://lolwtfgif.com/?url=bestgifarchive.tumblr.com">http://lolwtfgif.com/?url=bestgifarchive.tumblr.com</a>
-	</div>
-	<div id="logo">
-		<img src="img/logo.png">
+		<div class="wrapper">
+			<a class="logo" href="/"><img src="img/logo.png"></a>
+			<input type="text" value="enter url (i.e. iwdrm.tumblr.com)" class="url blur">
+			<div class="welcome">
+				<p class="t">create a fullscreen animated gif gallery from any tumblog.</p>
+				<p class="b">
+					<a href="http://lolwtfgif.com/?url=iwdrm.tumblr.com">cinematic gifs</a><br />
+					<a href="http://lolwtfgif.com/?url=skateboardinggifs.tumblr.com">skating gifs</a><br />
+					<a href="http://lolwtfgif.com/?url=bestgifarchive.tumblr.com">random gifs</a>
+				</p>
+			</div>
+		</div>
 	</div>
 	<ul>
-		<li><img class="dirty og" src="http://media.tumblr.com/tumblr_lmic52eaxi1qztwte.gif"></li>
+		<li><img class="dirty og" src="http://30.media.tumblr.com/tumblr_lu1vyvOMxt1qlu8tno1_500.gif"></li>
 	</ul>
+	<div class="share">
+		<div class="fb">
+			<div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div>
+		</div>
+		<div class="tw">
+			<a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-text="check this out">Tweet</a>
+		</div>
+		<div>
+			<a href="http://www.tumblr.com/share" title="Share on Tumblr" style="display:inline-block; text-indent:-9999px; overflow:hidden; width:81px; height:20px; background:url('http://platform.tumblr.com/v1/share_1.png') top left no-repeat transparent;">Share on Tumblr</a>
+		</div>
+	</div>
 </div>
 <div id="error" style="display:none;">
-	<div id="err" class="top">
-		damn, bro. couldn't find any gifs :(
-	</div>
-	<div id="try" class="top">
-		try <a href="javascript:location.reload(true)">reloading</a>, or check out one of these:<br/>
-				<a href="http://lolwtfgif.com/?url=iwdrm.tumblr.com">http://lolwtfgif.com/?url=iwdrm.tumblr.com</a><br />
-				<a href="http://lolwtfgif.com/?url=stonerparty.tumblr.com">http://lolwtfgif.com/?url=stonerparty.tumblr.com</a><br/>
-				<a href="http://lolwtfgif.com/?url=skateboardinggifs.tumblr.com">http://lolwtfgif.com/?url=skateboardinggifs.tumblr.com</a><br/>
-				or go back <a href="http://lolwtfgif.com">home</a>
-	</div>
-	<div id="logo">
-		<img src="img/logo.png">
+	<div id="input">
+		<div class="wrapper">
+			<a class="logo" href="/"><img src="img/logo.png"></a>
+			<input type="text" value="enter url (i.e. iwdrm.tumblr.com)" class="url blur">
+			<div class="welcome">
+				<p class="t">sorry, we couldn't load any gifs.<br><a class="error" href="javascript:location.reload(true)">try reloading</a></p>
+			</div>
+		</div>
 	</div>
 	<ul>
-		<li><img class="dirty og" src="http://28.media.tumblr.com/tumblr_m23ql1VbQL1qbxpeso1_500.gif"></li>
+		<li><img class="dirty og" src="http://27.media.tumblr.com/tumblr_lk82o89vSG1qe0eclo1_r7_500.gif"></li>
 	</ul>
 </div>
 <div id="goodstuff" style="display:none;">
@@ -94,14 +102,16 @@
 	</div>
 </div>
 <div id="loading" style="display:none;">
-	<div class="top" id="loading-text">
-		loading...
-	</div>
-	<div id="logo">
-		<img src="img/logo.png">
+	<div id="input">
+		<div class="wrapper">
+			<a class="logo" href="/"><img src="img/logo.png"></a>
+			<div class="welcome">
+				<p class="t">loading ...</p>
+			</div>
+		</div>
 	</div>
 	<ul>
-		<li><img class="dirty og" src="http://28.media.tumblr.com/tumblr_lkytwqcp3F1qg1y19o1_500.gif"></li>
+		<li><img class="dirty og" src="http://26.media.tumblr.com/tumblr_m1z9fvGE3n1qh3j4zo1_500.gif"></li>
 	</ul>
 </div>
 <footer>
@@ -113,7 +123,7 @@
 
 <!-- scripts concatenated and minified via ant build script-->
 <script src="js/plugins.js"></script>
-<script src="js/script.js?v1"></script>
+<script src="js/script.js?v2"></script>
 <!-- end scripts-->
 
 <script>

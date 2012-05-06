@@ -68,7 +68,7 @@ ul, li {
 div ul li:first-child img {
   display: block; }
 
-body:hover {
+#goodstuff:hover, #goodthing:hover {
   cursor: pointer; }
 
 #click, #loading-text {
@@ -113,13 +113,78 @@ body:hover {
   width: 100%;
   padding-bottom: 15px; }
 
-#url {
-  background: #f0f0f0;
-  color: #808080;
-  top: 30px;
-  left: 30px;
-  border: none;
-  font-weight: normal; }
+#input {
+  width: 100%;
+  position: absolute;
+  height: 100%; }
+  #input .logo {
+    position: relative;
+    margin: 100px auto 0;
+    width: 500px;
+    display: block; }
+    #input .logo img {
+      display: block !important; }
+  #input .wrapper {
+    width: 700px;
+    display: block;
+    margin: 0 auto; }
+  #input input.url {
+    background: #f0f0f0;
+    color: #808080;
+    top: 30px;
+    left: 30px;
+    border: 3px solid #222;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    border-radius: 7px;
+    background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #f9f9f9), color-stop(100%, #f0f0f0));
+    background-image: -webkit-linear-gradient(left top, #f9f9f9, #f0f0f0);
+    background-image: -moz-linear-gradient(left top, #f9f9f9, #f0f0f0);
+    background-image: -o-linear-gradient(left top, #f9f9f9, #f0f0f0);
+    background-image: -ms-linear-gradient(left top, #f9f9f9, #f0f0f0);
+    background-image: linear-gradient(left top, #f9f9f9, #f0f0f0);
+    -webkit-box-shadow: 0px 0px 6px #343434;
+    -moz-box-shadow: 0px 0px 6px #343434;
+    box-shadow: 0px 0px 6px #343434;
+    width: 600px;
+    height: 50px;
+    display: block;
+    margin: 5px auto 0;
+    font-size: 32px;
+    color: #555;
+    padding: 20px; }
+    #input input.url.blur {
+      color: #CCC;
+      font-style: italic; }
+  #input .welcome {
+    display: block;
+    margin: 30px auto 0;
+    width: 600px;
+    color: #f9f9f9;
+    text-shadow: rgba(52, 52, 52, 0.6) 0px 1px 3px; }
+    #input .welcome p {
+      margin: 0 0 60px 0;
+      text-align: center;
+      font-weight: bold; }
+      #input .welcome p a {
+        color: #e94f4f; }
+        #input .welcome p a:hover {
+          color: #343434; }
+        #input .welcome p a.error {
+          color: #0096ff;
+          line-height: 85px; }
+          #input .welcome p a.error:hover {
+            color: #343434; }
+    #input .welcome .t {
+      font-size: 34px;
+      line-height: 38px; }
+    #input .welcome .b {
+      font-size: 30px;
+      line-height: 50px;
+      padding-left: 25px;
+      margin-bottom: 0px; }
 
 #url:focus {
   border: none; }
@@ -128,9 +193,6 @@ body:hover {
   bottom: 30px;
   right: 30px;
   position: absolute; }
-
-#logo img {
-  display: block !important; }
 
 .top {
   position: absolute;
@@ -174,7 +236,8 @@ body:hover {
 
   #click {
     width: 655px;
-    font-size: 31px; }
+    font-size: 31px;
+    line-height: 46px; }
 
   #err {
     width: 545px; } }

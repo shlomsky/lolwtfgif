@@ -5,6 +5,10 @@
 @import "compass/css3";
 @import "compass/reset";
 
+$default-text-shadow-color: rgba(#343434, 0.6);
+$default-text-shadow-blur: 3px;
+$default-text-shadow-v-offset: 1px;
+
 body {
 	font-family:'helvetica neue', helvetica, arial, sans-serif;
 }
@@ -30,7 +34,7 @@ div ul li:first-child img{
 	display:block;
 }
 
-body:hover {
+#goodstuff:hover, #goodthing:hover {
 	cursor:pointer;
 }
 
@@ -84,13 +88,80 @@ body:hover {
 	padding-bottom:15px;
 }
 
-#url {
-	background:#f0f0f0;
-	color:#808080;
-	top:30px;
-	left:30px;
-	border:none;
-	font-weight:normal;
+#input {
+	width: 100%;
+	position: absolute;
+	height: 100%;
+	.logo {
+		position: relative;
+		margin: 100px auto 0;
+		width: 500px;
+		display: block;
+		img {
+			display:block !important;
+		}
+	}
+	.wrapper {
+		width:700px;
+		display:block;
+		margin:0 auto;
+	}
+	input.url {
+		background:#f0f0f0;
+		color:#808080;
+		top:30px;
+		left:30px;
+		border:3px solid #222;
+		@include border-radius(7px);
+		@include background-image(linear-gradient(left top, #f9f9f9, #f0f0f0));
+		@include box-shadow(0px 0px 6px #343434);
+		width:600px;
+		height:50px;
+		display: block;
+		margin: 5px auto 0;
+		font-size: 32px;
+		color:#555;
+		padding:20px;
+		&.blur {
+			color: #CCC;
+			font-style:italic;
+		}
+	}
+	.welcome {
+		display: block;
+		margin: 30px auto 0;
+		width:600px;
+		color:#f9f9f9;
+		@include text-shadow;
+		p {
+			margin:0 0 60px 0;
+			text-align:center;
+			font-weight:bold;
+			a {
+				color:#e94f4f;
+				&:hover {
+					color:#343434;
+				}
+				&.error {
+					color:#0096ff;
+					line-height: 85px;
+					&:hover {
+						color:#343434;
+					}
+				}
+			}
+		}
+		.t {
+			font-size: 34px;
+			line-height: 38px;
+		}
+		.b {
+			font-size: 30px;
+			line-height: 50px;
+			padding-left: 25px;
+			margin-bottom:0px;
+		}
+	}
 }
 
 #url:focus {
@@ -99,12 +170,8 @@ body:hover {
 
 #logo {
 	bottom:30px;
-		right:30px;
-		position:absolute;
-}
-
-#logo img {
-	display:block !important;
+	right:30px;
+	position:absolute;
 }
 
 .top {
@@ -161,6 +228,7 @@ body:hover {
 	#click {
 		width: 655px;
 		font-size: 31px;
+		line-height:46px;
 	}
 	#err {
 		width:545px;
