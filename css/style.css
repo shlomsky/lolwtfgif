@@ -174,7 +174,7 @@ div ul li:first-child img {
         #input .welcome p a:hover {
           color: #343434; }
         #input .welcome p a.error {
-          color: #0096ff;
+          color: #e23e80;
           line-height: 85px; }
           #input .welcome p a.error:hover {
             color: #343434; }
@@ -186,6 +186,31 @@ div ul li:first-child img {
       line-height: 50px;
       padding-left: 25px;
       margin-bottom: 0px; }
+    #input .welcome .big-random {
+      margin: 0 auto;
+      width: 292px; }
+      #input .welcome .big-random a {
+        color: #f9f9f9;
+        text-shadow: rgba(52, 52, 52, 0.6) 0px 1px 3px;
+        padding: 20px;
+        font-size: 25px;
+        background: #0096ff;
+        text-decoration: none;
+        font-weight: bold;
+        -webkit-box-shadow: 0px 0px 6px #343434;
+        -moz-box-shadow: 0px 0px 6px #343434;
+        box-shadow: 0px 0px 6px #343434;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        border-radius: 5px;
+        width: 252px;
+        height: 22px; }
+        #input .welcome .big-random a:hover {
+          background: #222222;
+          text-decoration: none;
+          cursor: pointer; }
 
 #url:focus {
   border: none; }

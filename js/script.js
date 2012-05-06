@@ -32,6 +32,9 @@ function showError() {
 			window.location.href = 'http://lolwtfgif.com/?url=' + str + '';
 	    }
 	});
+	var random = getRandomGallery();
+	var nextUrl = "/?url="+random+"";
+	$(".big-random a").attr("href", nextUrl);
 	$('#landing').hide();
 	$('#goodstuff').hide();
 	$('#goodthing').hide();
@@ -258,7 +261,7 @@ function anyScroll() {
 	$('.new-gallery').show();
 }
 
-var randomGallery = ["optimisto.tumblr.com", "bestgifarchive.tumblr.com", "influent.tumblr.com", "fuckyeahgifs.tumblr.com", "fancygifs.tumblr.com", "4gifs.tumblr.com", "gifparty.tumblr.com", "gifpeanutbutter.tumblr.com"];
+var randomGallery = ["optimisto.tumblr.com", "bestgifarchive.tumblr.com", "influent.tumblr.com", "fuckyeahgifs.tumblr.com", "fancygifs.tumblr.com", "4gifs.tumblr.com", "gifpeanutbutter.tumblr.com"];
 function getRandomGallery() {
    return randomGallery[Math.floor(Math.random() * randomGallery.length)];
 }

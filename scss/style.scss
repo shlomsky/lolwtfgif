@@ -144,7 +144,7 @@ div ul li:first-child img{
 					color:#343434;
 				}
 				&.error {
-					color:#0096ff;
+					color:#e23e80;
 					line-height: 85px;
 					&:hover {
 						color:#343434;
@@ -161,6 +161,28 @@ div ul li:first-child img{
 			line-height: 50px;
 			padding-left: 25px;
 			margin-bottom:0px;
+		}
+		.big-random {
+			margin: 0 auto;
+			width:292px;
+			a {
+				color:#f9f9f9;
+				@include text-shadow;
+				padding:20px;
+				font-size:25px;
+				background:#0096ff;
+				text-decoration:none;
+				font-weight:bold;
+				@include box-shadow(0px 0px 6px #343434);
+				@include border-radius(5px);
+				width:252px;
+				height:22px;
+				&:hover {
+					background:#222222;
+					text-decoration:none;
+					cursor:pointer;
+				}
+			}
 		}
 	}
 }
