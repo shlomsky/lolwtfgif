@@ -233,13 +233,13 @@ div ul li:first-child img{
 .new-gallery {
 	position:absolute;
 	right:15px;
-	bottom:20px;
+	bottom:25px;
 	display:none;
 	a {
 		color:#f9f9f9;
 		@include text-shadow;
-		padding:7px 11px;
-		font-size:14px;
+		padding: 12px 15px;
+		font-size: 15px;
 		background:#0096ff;
 		text-decoration:none;
 		font-weight:bold;
