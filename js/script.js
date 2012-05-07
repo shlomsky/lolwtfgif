@@ -114,7 +114,7 @@ $(document).ready(function() {
 				var nextUrl = "/?url="+random+"";
 				$("#goodstuff .new-gallery a").attr("href", nextUrl);
 			}
-		}, 5000);
+		}, 6000);
 	} else {
 		var random = getRandomGallery();
 		var nextUrl = "/?url="+random+"";
