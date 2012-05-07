@@ -180,7 +180,8 @@ div ul li:first-child img {
             color: #343434; }
     #input .welcome .t {
       font-size: 34px;
-      line-height: 38px; }
+      line-height: 38px;
+      margin-bottom: 85px; }
     #input .welcome .b {
       font-size: 30px;
       line-height: 50px;

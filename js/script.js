@@ -34,7 +34,7 @@ function showError() {
 	});
 	var random = getRandomGallery();
 	var nextUrl = "/?url="+random+"";
-	$(".big-random a").attr("href", nextUrl);
+	$("#error .big-random a").attr("href", nextUrl);
 	$('#landing').hide();
 	$('#goodstuff').hide();
 	$('#goodthing').hide();
@@ -116,6 +116,9 @@ $(document).ready(function() {
 			}
 		}, 5000);
 	} else {
+		var random = getRandomGallery();
+		var nextUrl = "/?url="+random+"";
+		$("#landing .big-random a").attr("href", nextUrl);
 		$('#loading').hide();
 		$('#landing').show();
 		imgClean();
