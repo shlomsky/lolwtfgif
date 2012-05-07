@@ -262,8 +262,7 @@ div ul li:first-child img {
 .new-gallery {
   position: absolute;
   right: 15px;
-  bottom: 30px;
-  display: none; }
+  bottom: 30px; }
   .new-gallery a {
     color: #f9f9f9;
     text-shadow: rgba(52, 52, 52, 0.6) 0px 1px 3px;

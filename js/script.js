@@ -261,7 +261,6 @@ function cycle(direction) {
 function anyScroll() {
 	total = $('#goodstuff li').size();
 	$('#goodstuff #click').hide();
-	$('.new-gallery').show();
 }
 
 var randomGallery = ["optimisto.tumblr.com", "bestgifarchive.tumblr.com", "influent.tumblr.com", "fuckyeahgifs.tumblr.com", "gifpeanutbutter.tumblr.com", "onlylolgifs.tumblr.com", "littleanimalgifs.tumblr.com", "4gifs.tumblr.com", "stonergirlfriend.tumblr.com", "randomgifs.tumblr.com", "skateboardinggifs.tumblr.com", "fuckyeahtylerthecreator.tumblr.com"];
