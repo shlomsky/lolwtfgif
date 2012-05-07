@@ -212,6 +212,8 @@ div ul li:first-child img {
           background: #222222;
           text-decoration: none;
           cursor: pointer; }
+        #input .welcome .big-random a:active {
+          margin-top: 1px; }
 
 #url:focus {
   border: none; }
@@ -250,7 +252,7 @@ div ul li:first-child img {
 .new-gallery {
   position: absolute;
   right: 15px;
-  bottom: 25px;
+  bottom: 35px;
   display: none; }
   .new-gallery a {
     color: #f9f9f9;
@@ -272,6 +274,8 @@ div ul li:first-child img {
       background: #e23e80;
       text-decoration: none;
       cursor: pointer; }
+    .new-gallery a:active {
+      margin-top: 1px; }
 
 /* =============================================================================
    Media Queries

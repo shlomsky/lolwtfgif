@@ -183,6 +183,9 @@ div ul li:first-child img{
 					text-decoration:none;
 					cursor:pointer;
 				}
+				&:active {
+					margin-top:1px;
+				}
 			}
 		}
 	}
@@ -233,7 +236,7 @@ div ul li:first-child img{
 .new-gallery {
 	position:absolute;
 	right:15px;
-	bottom:25px;
+	bottom:35px;
 	display:none;
 	a {
 		color:#f9f9f9;
@@ -249,6 +252,9 @@ div ul li:first-child img{
 			background:#e23e80;
 			text-decoration:none;
 			cursor:pointer;
+		}
+		&:active {
+			margin-top:1px;
 		}
 	}
 }
