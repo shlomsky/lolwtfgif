@@ -34,6 +34,7 @@ function showError() {
 	});
 	var random = getRandomGallery();
 	var nextUrl = "/?url="+random+"";
+	defaultGif("error");
 	$("#error .big-random a").attr("href", nextUrl);
 	$('#landing').hide();
 	$('#goodstuff').hide();
@@ -94,6 +95,7 @@ $(document).ready(function() {
 		imgClean();
 	}
 	else if (url) {
+		defaultGif("loading");
 		$('#loading').show();
 		if (url.substr(-1) === '/') {
 		 url = url.substr(0, url.length - 1);
@@ -118,6 +120,7 @@ $(document).ready(function() {
 	} else {
 		var random = getRandomGallery();
 		var nextUrl = "/?url="+random+"";
+		defaultGif("landing");
 		$("#landing .big-random a").attr("href", nextUrl);
 		$('#loading').hide();
 		$('#landing').show();
@@ -266,6 +269,12 @@ function anyScroll() {
 var randomGallery = ["optimisto.tumblr.com", "bestgifarchive.tumblr.com", "influent.tumblr.com", "fuckyeahgifs.tumblr.com", "gifpeanutbutter.tumblr.com", "onlylolgifs.tumblr.com", "littleanimalgifs.tumblr.com", "4gifs.tumblr.com", "stonergirlfriend.tumblr.com", "randomgifs.tumblr.com", "skateboardinggifs.tumblr.com", "fuckyeahtylerthecreator.tumblr.com"];
 function getRandomGallery() {
    return randomGallery[Math.floor(Math.random() * randomGallery.length)];
+}
+
+function defaultGif(section){
+	var z = $("#"+section+" img.default");
+	var x = z.attr('id');
+	z.attr('src', x);
 }
 
 

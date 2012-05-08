@@ -51,7 +51,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 body {
   font-family: 'helvetica neue', helvetica, arial, sans-serif;
-  position: fixed; }
+  position: fixed;
+  background: #222; }
 
 strong {
   font-weight: bold; }
