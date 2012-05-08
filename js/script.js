@@ -266,7 +266,7 @@ function anyScroll() {
 	$('#goodstuff #click').hide();
 }
 
-var randomGallery = ["theofficegifs.tumblr.com", "parksandrecgifs.tumblr.com"];
+var randomGallery = ["theofficegifs.tumblr.com", "parksandrecgifs.tumblr.com", "willferrell.tumblr.com", "conangifs.tumblr.com"];
 function getRandomGallery() {
    return randomGallery[Math.floor(Math.random() * randomGallery.length)];
 }
