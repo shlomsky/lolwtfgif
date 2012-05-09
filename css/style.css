@@ -255,10 +255,20 @@ div ul li:first-child img {
 
 .logo-small {
   position: absolute;
-  left: 15px;
+  left: 17px;
   bottom: 10px; }
   .logo-small img {
     display: block !important; }
+
+.autoplay {
+  position: absolute;
+  left: 210px;
+  bottom: 15px;
+  text-shadow: rgba(52, 52, 52, 0.6) 0px 1px 3px;
+  color: #f9f9f9;
+  font-size: 16px; }
+  .autoplay span:hover {
+    cursor: pointer; }
 
 .new-gallery {
   position: absolute;

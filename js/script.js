@@ -187,6 +187,15 @@ $(document).ready(function() {
 	       cycle('left');
 	    }
 	});
+	
+	//autoplay
+	$(".autoplay span").click(function(){
+		$(".autoplay input").trigger("click");
+	});
+	
+	$(".autoplay input").click(function(){
+		setInterval(autoPlay, 2500);
+	});
 
 
 });
@@ -275,6 +284,13 @@ function defaultGif(section){
 	var z = $("#"+section+" img.default");
 	var x = z.attr('id');
 	z.attr('src', x);
+}
+
+function autoPlay(){
+	//autoplay
+	if ($(".autoplay input").is(':checked')){
+		cycle('right');
+	} 
 }
 
 
