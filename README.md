@@ -1,1 +1,1 @@
-Repo for [lolwtfgif.com](lolwtfgif.com)
+Repo for [http://lolwtfgif.com](lolwtfgif.com)
