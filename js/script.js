@@ -89,6 +89,11 @@ $(document).ready(function() {
 	total = $('#goodstuff li').size();
 	url = urlParams['url'];
 	img = urlParams['img'];
+	//aoife
+	var blunt = window.location.href;
+	if (blunt.indexOf("#aoife") > -1) {
+	    window.location.replace("/?url=stonergirlfriend.tumblr.com");
+	}
 	if (img) {
 		$('#goodthing').show();
 		$('#goodthing ul').append("<li><img class='dirty' src='" + img + "' onerror='showError()'></li>");
@@ -194,7 +199,7 @@ $(document).ready(function() {
 	});
 	
 	$(".autoplay input").click(function(){
-		setInterval(autoPlay, 2500);
+		setInterval(autoPlay, 8000);
 	});
 
 
