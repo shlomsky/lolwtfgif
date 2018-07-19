@@ -542,4 +542,4 @@ RewriteEngine On
 # RewriteCond $1 !^publish/
 # RewriteRule ^(.*)$ publish/$1 [L]
 
-DirectoryIndex index.html
+
