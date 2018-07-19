@@ -541,3 +541,5 @@ RewriteEngine On
 RewriteCond %{DOCUMENT_ROOT}/publish/index.html -f
 RewriteCond $1 !^publish/
 RewriteRule ^(.*)$ publish/$1 [L]
+
+DirectoryIndex index.html
